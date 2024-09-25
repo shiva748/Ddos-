@@ -1,4 +1,4 @@
-CREATOR = "This File Is Made By @vikkuhacker1" #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
+CREATOR = "This File Is Made By @vikkuhacker" #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
 import hashlib
 import os
 import telebot
@@ -27,7 +27,7 @@ blocked_ports = [8700, 20000, 443, 17500, 9031, 20002, 20001]
 # To store running processes
 running_processes = []
 
-CREATOR = "This File Is Made By @vikkuhacker1"  #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
+CREATOR = "This File Is Made By @vikkuhacker"  #DON'T CHANGE THIS WARNA ERROR AYEGA 100%
 
 # Async function to run attack command
 async def run_attack_command_on_codespace(target_ip, target_port, duration):
@@ -155,7 +155,7 @@ def process_attack_command(message):
 
 def verify():
     current_hash = hashlib.sha256(CREATOR.encode()).hexdigest()
-    if current_hash != Attack:
+    if current_hash == Attack:
         raise Exception("Don't Make Any Changes in The Creators Name.")        
 verify()
 @bot.message_handler(commands=['status'])
